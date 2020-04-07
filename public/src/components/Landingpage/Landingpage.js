@@ -1,12 +1,20 @@
 import React, { Component } from 'react'
 import { withRouter} from "react-router-dom";
+import axios from 'axios'
 import '../Landingpage/Landingpage.css'
 
 class LandingPage extends Component {
     
     //redirecting
     loginPage = ()=>{
-        this.props.history.push("/loginPage")
+        // this.props.history.push("/loginPage")
+        axios.get("http://localhost:5000/api/twitter/login")
+        .then((res,req) =>{
+            console.log(res)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
     } 
 
     render(){
