@@ -1,0 +1,189 @@
+:root{
+    --primary-color:#000;
+    --secondary-color:#6b6666;
+    --primary-font:arial;
+    --form_bg: #ffffff;
+    --form_bg: #ffffff;
+    --input_bg: #E5E5E5;
+    --input_hover:#eaeaea;
+    --submit_bg: #1FCC44;
+    --submit_hover: #40e263;
+    --icon_color:#6b6b6b;
+}
+
+body{
+    padding:0; 
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height:95vh;
+}
+
+.alignCenter{
+    align-items:center;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex1{
+    flex:1;
+}
+
+.appName{
+    height: 99vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: #1890f0;
+}
+
+.flex1 .appName span{
+    color:whitesmoke;
+}
+
+.bgColor{
+    background:blue;
+}
+
+h1{
+    font-size: 50px;
+}
+
+button{
+    size: 1px;
+}
+
+.inputBox{
+    width: 300px;
+    height: 3em;
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.searchButton{
+    border-radius: 4px;
+    width:8em;
+    height: 3.4em;
+    background: transparent;
+}
+
+.userArea{
+    padding: 15px;
+    padding-top: 10%;
+}
+
+.line{
+    margin-top: 20px;
+    color:var(--secondary-color);
+}
+
+
+.form_right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 10% 5%;
+}
+.input_container {
+    background-color: var(--input_bg);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.input_container:hover {
+    background-color: var(--input_hover);
+}
+
+
+h1,
+span {
+    text-align: center;
+}
+
+.create_account {
+    display: block;
+    position: relative;
+    top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--submit_bg);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--submit_hover);
+}
+
+i {
+    color: var(--icon_color);
+}
+
+.input_field {
+    color: var(--icon_color);
+    background-color: inherit;
+    width: 90%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.input_field:hover,
+.input_field:focus {
+    /* remove the outline */
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .appName{height: auto;
+        display: block;
+        align-items: unset;
+        justify-content: unset;
+        text-align: center;
+    }
+    .flex{
+        display: block;
+    }
+    .container {
+        height: auto;
+    }
+    .inputBox{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+.frmField{ 
+    display: block;
+    width: 90%; 
+    padding: 10px 20px;
+    color: #707D80; 
+    font-size: 30px;    
+    border: none;  
+    background: #EDEDED; 
+    outline: none; 
+    margin: 2% 0;
+}
+
+.frmBtn{cursor: pointer;
+    padding: 12px 40px; 
+    font-size: 20px; 
+    background-color: rgb(0, 175, 245); 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    border-radius: 25px; 
+    margin: 0 10%;
+}
