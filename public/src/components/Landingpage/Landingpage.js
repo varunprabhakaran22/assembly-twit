@@ -9,11 +9,6 @@ class LandingPage extends Component {
         this.props.history.push("/loginPage")
     } 
 
-    //redirecting
-    userCreation = ()=>{
-        this.props.history.push("/createUser")
-    }
-
     render(){
         return(
             <div className="container flex">
