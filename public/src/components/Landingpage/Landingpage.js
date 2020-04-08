@@ -25,6 +25,7 @@ class LandingPage extends Component {
 
             })
             console.log(res)
+            console.log(this.state.assemblyTwitterUrl)
         })
         .catch((err) => {
             console.log(err)
