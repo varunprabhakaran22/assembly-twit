@@ -20,11 +20,12 @@ class LandingPage extends Component {
         axios.get("http://localhost:5000/api/twitter/login")
         .then((res,req) =>{
             this.setState({
-                assemblyTwitterUrl : res.responseURL,
+                assemblyTwitterUrl : res.request.responseURL,
                 signInWithTwitter : true
 
             })
             console.log(res)
+            console.log(res.request.responseURL);
             console.log(this.state.assemblyTwitterUrl)
         })
         .catch((err) => {
