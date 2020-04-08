@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import { withRouter} from "react-router-dom";
 import axios from 'axios'
 import '../Landingpage/Landingpage.css'
@@ -36,8 +36,7 @@ class LandingPage extends Component {
 
     routeChange=()=> {
         let path = this.state.assemblyTwitterUrl
-        let history = useHistory();
-        history.push(path);
+        window.location.href=path
     }
 
     render(){
