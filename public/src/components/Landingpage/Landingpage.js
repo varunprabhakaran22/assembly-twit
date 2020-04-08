@@ -19,9 +19,9 @@ class LandingPage extends Component {
         // this.props.history.push("/loginPage")
         axios.get("http://localhost:5000/api/twitter/login")
         .then((res,req) =>{
-            this.setState((prevState)=>{
-                prevState.assemblyTwitterUrl = res.responseURL,
-                prevState.signInWithTwitter = true
+            this.setState({
+                assemblyTwitterUrl : res.responseURL,
+                signInWithTwitter : true
 
             })
             console.log(res)
