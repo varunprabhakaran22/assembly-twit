@@ -67,6 +67,9 @@ app.get("/", authCheck, (req, res) => {
   });
 });
 
+
+
+
 // connect react to nodejs express server
 app.listen(port, () => console.log(`Server is running on port ${port}!`));
 

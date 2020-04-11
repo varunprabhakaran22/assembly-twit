@@ -19,7 +19,7 @@ passport.deserializeUser((id, done) => {
       done(new Error("Failed to deserialize an user"));
     });
 });
-
+ 
 passport.use(
   new TwitterStrategy(
     {
@@ -32,14 +32,17 @@ passport.use(
       const currentUser = await User.findOne({
         twitterId: profile._json.id_str
       });
+      console.log(profile)
+      console.log(token)
+      console.log(tokenSecret)
       // create new user if the database doesn't have this user
       if (!currentUser) {
         const newUser = await new User({
-          name: profile._json.name,
+          name: profile._json.name, 
           screenName: profile._json.screen_name,
           twitterId: profile._json.id_str,
           profileImageUrl: profile._json.profile_image_url
-        }).save();
+        }).save(); 
         if (newUser) {
           done(null, newUser);
         }
