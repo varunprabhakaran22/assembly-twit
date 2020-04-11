@@ -1,3 +1,11 @@
 .hompage-container{
     padding: 0 5%;
 }
+
+.button-refresh{
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 2rem 0;
+    cursor: pointer;
+}

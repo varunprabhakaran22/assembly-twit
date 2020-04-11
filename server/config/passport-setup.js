@@ -34,7 +34,6 @@ passport.use(
       });
       console.log(profile)
       console.log(token)
-      console.log(tokenSecret)
       // create new user if the database doesn't have this user
       if (!currentUser) {
         const newUser = await new User({
@@ -51,3 +50,5 @@ passport.use(
     }
   )
 );
+
+

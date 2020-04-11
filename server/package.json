@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": " node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "fetch": "^1.1.0",
     "headers": "^0.9.6",
     "jquery": "^3.4.1",
+    "mongoclient": "^1.0.3",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.7",
     "node-fetch": "^2.6.0",
